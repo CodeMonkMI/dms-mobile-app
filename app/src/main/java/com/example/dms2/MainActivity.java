@@ -14,8 +14,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
-    LinearLayout containerLayout;
+    LinearLayout counterLayout;
+    LinearLayout homeLinksLayout;
+    List<StatItem> counterList = new ArrayList<>();
+    List<HomeLinkItem> homeLinks = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,23 +34,92 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        containerLayout = findViewById(R.id.container_layout);
+        counterLayout = findViewById(R.id.main_counter_layout);
 
-        // Example: render 5 components
-        for (int i = 0; i < 5; i++) {
-            View itemView = LayoutInflater.from(this).inflate(R.layout.item, containerLayout, false);
+        counterList.add(new StatItem('1', "Total Faculty", "45"));
+        counterList.add(new StatItem('2', "Total Students", "1250"));
+        counterList.add(new StatItem('3', "Active Courses", "78"));
+        counterList.add(new StatItem('4', "Pending Notices", "4"));
+        counterList.add(new StatItem('5', "Upcoming Events", "8"));
 
-            TextView itemText = itemView.findViewById(R.id.item_text);
-            Button itemButton = itemView.findViewById(R.id.item_button);
 
-            itemText.setText("Item #" + (i + 1));
-            int finalI = i;
-            itemButton.setOnClickListener(v -> {
-                Toast.makeText(this, "Clicked item " + (finalI + 1), Toast.LENGTH_SHORT).show();
-            });
+        for (StatItem item : counterList) {
+            View viewItem = LayoutInflater.from(this).inflate(R.layout.counter_card, counterLayout, false);
 
-            containerLayout.addView(itemView);
+            TextView itemLabel = viewItem.findViewById(R.id.counter_card_label);
+            TextView itemNumber = viewItem.findViewById(R.id.counter_card_number);
+
+            itemLabel.setText(item.getLabel());
+            itemNumber.setText(item.getValue());
+
+            counterLayout.addView(viewItem);
+
+
         }
+
+        homeLinksLayout = findViewById(R.id.main_links_layout);
+
+        homeLinks.add(new HomeLinkItem('1', "Total Faculty", "45"));
+        homeLinks.add(new HomeLinkItem('2', "Total Students", "1250"));
+        homeLinks.add(new HomeLinkItem('3', "Active Courses", "78"));
+        homeLinks.add(new HomeLinkItem('4', "Pending Notices", "4"));
+        homeLinks.add(new HomeLinkItem('5', "Upcoming Events", "8"));
+
+
+        for (HomeLinkItem item : homeLinks) {
+            View viewItem = LayoutInflater.from(this).inflate(R.layout.home_link_item, homeLinksLayout, false);
+
+            TextView itemLabel = viewItem.findViewById(R.id.home_link_title);
+            TextView itemNumber = viewItem.findViewById(R.id.home_link_text);
+
+            itemLabel.setText(item.getTitle());
+            itemNumber.setText(item.getText());
+
+            counterLayout.addView(viewItem);
+
+
+        }
+
 
     }
 }
+
+
+
+
+
+class HomeLinkItem {
+    private int id;
+    private String title;
+    private String text;
+
+    public HomeLinkItem(int id, String title, String text) {
+        this.id = id;
+        this.title = title;
+        this.text = text;
+    }
+
+    // Getters
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    // Optional: toString for debugging
+    @Override
+    public String toString() {
+        return "StatItem{" +
+                "id=" + id +
+                ", label='" + title + '\'' +
+                ", value='" + text + '\'' +
+                '}';
+    }
+}
+
