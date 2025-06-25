@@ -1,5 +1,6 @@
 package com.example.dms2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,12 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
         homeLinksLayout = findViewById(R.id.main_links_layout);
 
-        homeLinks.add(new HomeLinkItem('1', "Total Faculty", "45"));
-        homeLinks.add(new HomeLinkItem('2', "Total Students", "1250"));
-        homeLinks.add(new HomeLinkItem('3', "Active Courses", "78"));
-        homeLinks.add(new HomeLinkItem('4', "Pending Notices", "4"));
-        homeLinks.add(new HomeLinkItem('5', "Upcoming Events", "8"));
-
+        homeLinks.add(new HomeLinkItem(1, "Teachers", "Faculty and staff management"));
+        homeLinks.add(new HomeLinkItem(2, "Notices", "Department  announcements"));
+        homeLinks.add(new HomeLinkItem(3, "Results", "Academic results adn grades"));
+        homeLinks.add(new HomeLinkItem(4, "Book List", "Course material and resources"));
+        homeLinks.add(new HomeLinkItem(5, "Contact Us", "Department directory"));
 
         for (HomeLinkItem item : homeLinks) {
             View viewItem = LayoutInflater.from(this).inflate(R.layout.home_link_item, homeLinksLayout, false);
@@ -72,20 +72,51 @@ public class MainActivity extends AppCompatActivity {
             TextView itemLabel = viewItem.findViewById(R.id.home_link_title);
             TextView itemNumber = viewItem.findViewById(R.id.home_link_text);
 
+            viewItem.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent;
+                    int id = item.getId();
+                    if (id == 1) {
+                        intent = new Intent(MainActivity.this, Teachers.class);
+                    } else if (id == 2) {
+                        intent = new Intent(MainActivity.this, Notices.class);
+                    } else if (id == 3) {
+                        intent = new Intent(MainActivity.this, Results.class);
+                    } else if (id == 4) {
+                        intent = new Intent(MainActivity.this, BookList.class);
+                    } else if (id == 5) {
+                        intent = new Intent(MainActivity.this, ContactUs.class);
+                    } else {
+                        return;
+                    }
+
+
+                    startActivity(intent);
+
+                }
+            });
+
             itemLabel.setText(item.getTitle());
             itemNumber.setText(item.getText());
 
-            counterLayout.addView(viewItem);
+            homeLinksLayout.addView(viewItem);
 
 
         }
 
+//        new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(MainActivity.this, C_Sharp.class);
+//                startActivity(intent);
+//            }
+//        }
+
 
     }
 }
-
-
-
 
 
 class HomeLinkItem {
@@ -123,3 +154,38 @@ class HomeLinkItem {
     }
 }
 
+
+class StatItem {
+    private int id;
+    private String label;
+    private String value;
+
+    public StatItem(int id, String label, String value) {
+        this.id = id;
+        this.label = label;
+        this.value = value;
+    }
+
+    // Getters
+    public int getId() {
+        return id;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    // Optional: toString for debugging
+    @Override
+    public String toString() {
+        return "StatItem{" +
+                "id=" + id +
+                ", label='" + label + '\'' +
+                ", value='" + value + '\'' +
+                '}';
+    }
+}
