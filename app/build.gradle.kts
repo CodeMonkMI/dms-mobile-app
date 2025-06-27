@@ -41,6 +41,8 @@ dependencies {
     implementation(libs.drawerlayout)
     implementation(libs.google.material)
     implementation(libs.androidx.appcompat)
+    implementation(libs.okhttp)
+    implementation(libs.cronet.embedded)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
