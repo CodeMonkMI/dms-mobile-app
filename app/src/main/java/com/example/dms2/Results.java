@@ -1,5 +1,6 @@
 package com.example.dms2;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -96,6 +97,11 @@ public class Results extends BaseActivity {
                                 name.setText(semester.semester + " Semester");
                                 date.setText("Publish date: " + result.date.substring(0, 10)); // cleaner
                                 gpa.setText("GPA: " + result.gpa);
+                                if(result.gpa == 0.0) {
+                                    gpa.setTextColor(Color.parseColor("#FF0000"));
+                                    name.setTextColor(Color.parseColor("#FF0000"));
+                                    date.setTextColor(Color.parseColor("#FF0000"));
+                                }
 
                                 result_table_layout.addView(viewItem);
                             }
