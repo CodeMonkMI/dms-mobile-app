@@ -81,27 +81,7 @@ public class MainActivity extends BaseActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        int id = item.getItemId();
-
-        if (id == R.id.action_menu_about_us) {
-
-            Intent intent = new Intent(MainActivity.this, AboutUs.class);
-            startActivity(intent);
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
 
 
