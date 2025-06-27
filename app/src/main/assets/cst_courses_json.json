@@ -1,0 +1,972 @@
+{
+  "1": [
+    {
+      "code": "21011",
+      "name": "Engineering Drawing",
+      "theory": 0,
+      "practical": 6,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25711",
+      "name": "Bangla-I",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25712",
+      "name": "English-I",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25911",
+      "name": "Mathematics -I",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "25912",
+      "name": "Physics -I",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28511",
+      "name": "Computer Office Application",
+      "theory": 0,
+      "practical": 6,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "26711",
+      "name": "Basic Electricity",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    }
+  ],
+  "2": [
+    {
+      "code": "25721",
+      "name": "Bangla -II",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25722",
+      "name": "English-II",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25812",
+      "name": "Physical Education & Life skills Development",
+      "theory": 0,
+      "practical": 3,
+      "credit": 1,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 50
+    },
+    {
+      "code": "25913",
+      "name": "Chemistry",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "25921",
+      "name": "Mathematics-II",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28521",
+      "name": "Python Programming",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28522",
+      "name": "Computer Graphics Design-I",
+      "theory": 0,
+      "practical": 6,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "26811",
+      "name": "Basic Electronics",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    }
+  ],
+  "3": [
+    {
+      "code": "25811",
+      "name": "Social Science",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25922",
+      "name": "Physics -II",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "25931",
+      "name": "Mathematics-III",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28531",
+      "name": "Application Development Using Python",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28532",
+      "name": "Computer Graphics Design-II",
+      "theory": 0,
+      "practical": 3,
+      "credit": 1,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 50
+    },
+    {
+      "code": "28533",
+      "name": "IT Support Services",
+      "theory": 2,
+      "practical": 6,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "26831",
+      "name": "Digital Electronics-I",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    }
+  ],
+  "4": [
+    {
+      "code": "25831",
+      "name": "Business Communication",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28541",
+      "name": "Java Programming",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28542",
+      "name": "Data Structure & Algorithm",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28543",
+      "name": "Computer Peripherals & Interfacing",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28544",
+      "name": "Web Design & Development-I",
+      "theory": 1,
+      "practical": 6,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 20,
+        "finalExam": 30,
+        "total": 50
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "26841",
+      "name": "Digital Electronics-II",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "29041",
+      "name": "Environmental Studies",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    }
+  ],
+  "5": [
+    {
+      "code": "25841",
+      "name": "Accounting",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28551",
+      "name": "Application Development Using Java",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28552",
+      "name": "Web Design & Development-II",
+      "theory": 1,
+      "practical": 6,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 20,
+        "finalExam": 30,
+        "total": 50
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28553",
+      "name": "Computer Architecture & Microprocessor",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28554",
+      "name": "Data Communication",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28555",
+      "name": "Operating System",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28556",
+      "name": "Project Work-I",
+      "theory": 0,
+      "practical": 3,
+      "credit": 1,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 50
+    }
+  ],
+  "6": [
+    {
+      "code": "25851",
+      "name": "Principles of Marketing",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "25852",
+      "name": "Industrial Management",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28561",
+      "name": "Database Management System",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28562",
+      "name": "Computer Networking",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28563",
+      "name": "Sensor & IoT System",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28564",
+      "name": "Microcontroller Based System Design & Development",
+      "theory": 2,
+      "practical": 6,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28565",
+      "name": "Surveillance Security System",
+      "theory": 1,
+      "practical": 3,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 20,
+        "finalExam": 30,
+        "total": 50
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28566",
+      "name": "Web Development Project",
+      "theory": 0,
+      "practical": 3,
+      "credit": 1,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 50
+    }
+  ],
+  "7": [
+    {
+      "code": "25853",
+      "name": "Innovation & Entrepreneurship",
+      "theory": 2,
+      "practical": 0,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28571",
+      "name": "Digital Marketing Technique",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28572",
+      "name": "Network Administration & Services",
+      "theory": 3,
+      "practical": 3,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 60,
+        "finalExam": 90,
+        "total": 150
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 200
+    },
+    {
+      "code": "28573",
+      "name": "Cyber Security & Ethics",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28574",
+      "name": "Apps Development Project",
+      "theory": 1,
+      "practical": 3,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 20,
+        "finalExam": 30,
+        "total": 50
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 100
+    },
+    {
+      "code": "28575",
+      "name": "Multimedia & Animation",
+      "theory": 2,
+      "practical": 3,
+      "credit": 3,
+      "theoryAssessment": {
+        "continuous": 40,
+        "finalExam": 60,
+        "total": 100
+      },
+      "practicalAssessment": {
+        "continuous": 25,
+        "finalExam": 25,
+        "total": 50
+      },
+      "grandTotal": 150
+    },
+    {
+      "code": "28576",
+      "name": "Project Work-II",
+      "theory": 0,
+      "practical": 6,
+      "credit": 2,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 50,
+        "finalExam": 50,
+        "total": 100
+      },
+      "grandTotal": 100
+    }
+  ],
+  "8": [
+    {
+      "code": "28581",
+      "name": "Industrial Attachement",
+      "theory": 0,
+      "practical": 24,
+      "credit": 8,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 200,
+        "finalExam": 200,
+        "total": 400
+      },
+      "grandTotal": 400
+    },
+    {
+      "code": "28582",
+      "name": "Project Presentation",
+      "theory": 0,
+      "practical": 12,
+      "credit": 4,
+      "theoryAssessment": {
+        "continuous": 0,
+        "finalExam": 0,
+        "total": 0
+      },
+      "practicalAssessment": {
+        "continuous": 100,
+        "finalExam": 100,
+        "total": 200
+      },
+      "grandTotal": 200
+    }
+  ]
+}
