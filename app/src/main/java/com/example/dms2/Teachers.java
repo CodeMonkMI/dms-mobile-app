@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Teachers extends AppCompatActivity {
+public class Teachers extends BaseActivity {
     LinearLayout teacherListLayout;
     List<TeacherItem> homeLinks = new ArrayList<>();
 

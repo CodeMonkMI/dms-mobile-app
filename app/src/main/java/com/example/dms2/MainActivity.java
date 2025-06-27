@@ -11,33 +11,50 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.widget.Toolbar;
+
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+
+
+
+import androidx.core.view.GravityCompat;
+
+
+public class MainActivity extends BaseActivity {
     LinearLayout counterLayout;
     LinearLayout homeLinksLayout;
     List<StatItem> counterList = new ArrayList<>();
     List<HomeLinkItem> homeLinks = new ArrayList<>();
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.drawer_layout), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+
+
+        // inflate dynamic data
         counterLayout = findViewById(R.id.main_counter_layout);
 
         counterList.add(new StatItem('1', "Total Faculty", "45"));
@@ -61,70 +78,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        homeLinksLayout = findViewById(R.id.main_links_layout);
-
-        homeLinks.add(new HomeLinkItem(1, "Teachers", "Faculty and staff management"));
-        homeLinks.add(new HomeLinkItem(2, "Notices", "Department  announcements"));
-        homeLinks.add(new HomeLinkItem(3, "Results", "Academic results adn grades"));
-        homeLinks.add(new HomeLinkItem(4, "Book List", "Course material and resources"));
-        homeLinks.add(new HomeLinkItem(5, "Contact Us", "Department directory"));
-
-        for (HomeLinkItem item : homeLinks) {
-            View viewItem = LayoutInflater.from(this).inflate(R.layout.home_link_item, homeLinksLayout, false);
-
-            TextView itemLabel = viewItem.findViewById(R.id.home_link_title);
-            TextView itemNumber = viewItem.findViewById(R.id.home_link_text);
-
-            viewItem.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    Intent intent;
-                    int id = item.getId();
-                    if (id == 1) {
-                        intent = new Intent(MainActivity.this, Teachers.class);
-                    } else if (id == 2) {
-                        intent = new Intent(MainActivity.this, Notices.class);
-                    } else if (id == 3) {
-                        intent = new Intent(MainActivity.this, Results.class);
-                    } else if (id == 4) {
-                        intent = new Intent(MainActivity.this, BookList.class);
-                    } else if (id == 5) {
-                        intent = new Intent(MainActivity.this, ContactUs.class);
-                    } else {
-                        return;
-                    }
-
-
-                    startActivity(intent);
-
-                }
-            });
-
-            itemLabel.setText(item.getTitle());
-            itemNumber.setText(item.getText());
-
-            homeLinksLayout.addView(viewItem);
-
-
-        }
-
-//        new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this, C_Sharp.class);
-//                startActivity(intent);
-//            }
-//        }
-
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        return  true;
+        return true;
     }
 
     @Override
@@ -132,12 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
-        if(id == R.id.action_menu_about_us) {
+        if (id == R.id.action_menu_about_us) {
 
             Intent intent = new Intent(MainActivity.this, AboutUs.class);
             startActivity(intent);
 
-            return  true;
+            return true;
         }
 
         return super.onOptionsItemSelected(item);

@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Notices extends AppCompatActivity {
+public class Notices extends BaseActivity {
     LinearLayout noticesListLayout;
     List<NoticeItem> noticeItems = new ArrayList<>();
 

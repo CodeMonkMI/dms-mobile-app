@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class SemesterBooks extends AppCompatActivity {
+public class SemesterBooks extends BaseActivity {
     private static final String TAG = "SemesterBooksActivity";
     LinearLayout semesterBookListLayout;
 

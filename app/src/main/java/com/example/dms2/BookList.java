@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 
 
-public class BookList extends AppCompatActivity {
+public class BookList extends BaseActivity {
 
     LinearLayout semesterListLayout;
 
