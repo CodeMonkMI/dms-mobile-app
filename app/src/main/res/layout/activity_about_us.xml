@@ -7,9 +7,138 @@
     android:layout_height="match_parent"
     tools:context=".AboutUs">
 
-    <TextView
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="About Us" />
+        android:background="#F8F8F8">
+
+        <LinearLayout
+            android:id="@+id/about_us_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Top Banner Image -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/about_us_image"
+                android:layout_width="200dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/monirul_islam"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/about_us_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="About"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/about_us_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="This application is developed by Monirul islam for Computer Science Department to support academic and administrative tasks with improved efficiency and communication."
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <!-- Contact Info -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Contact Me"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/about_us_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:autoLink="email"
+                android:text="Email: mr.monirul.dev@gmail.com"
+                android:textColor="#1E88E5"
+                android:textSize="14sp" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/about_us_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:autoLink="phone"
+                android:text="Phone: +8801963636430"
+                android:textColor="#1E88E5"
+                android:textSize="14sp" />
+
+            <!-- Facebook -->
+            <TextView
+                android:id="@+id/about_us_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Facebook"
+                android:textColor="#1E88E5"
+                android:textSize="14sp" />
+
+            <!-- LinkedIn -->
+            <TextView
+                android:id="@+id/about_us_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="LinkedIn"
+                android:textColor="#1E88E5"
+                android:textSize="14sp" />
+
+            <!-- GitHub -->
+            <TextView
+                android:id="@+id/about_us_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="GitHub"
+                android:textColor="#1E88E5"
+                android:textSize="14sp" />
+
+            <!-- Extra Info -->
+            <TextView
+                android:id="@+id/about_us_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="App Version: 1.0.0"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <!-- Copyright -->
+            <TextView
+                android:id="@+id/about_us_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="© 2025 Department of Computer Science, All rights reserved."
+                android:textColor="#888888"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
