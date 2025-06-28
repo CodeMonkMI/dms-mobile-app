@@ -2,6 +2,8 @@ package com.example.dms2;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -107,26 +110,38 @@ public class BaseActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    Intent intent;
+                    Intent intent = null;
                     int id = item.getId();
+                    Class<?> targetActivity = null;
+
                     if (id == 0) {
-                        intent = new Intent(BaseActivity.this, MainActivity.class);
+                        targetActivity = MainActivity.class;
                     } else if (id == 1) {
-                        intent = new Intent(BaseActivity.this, Teachers.class);
+                        targetActivity = Teachers.class;
                     } else if (id == 2) {
-                        intent = new Intent(BaseActivity.this, Notices.class);
+                        targetActivity = Notices.class;
                     } else if (id == 3) {
-                        intent = new Intent(BaseActivity.this, Results.class);
+                        targetActivity = Results.class;
                     } else if (id == 4) {
-                        intent = new Intent(BaseActivity.this, BookList.class);
+                        targetActivity = BookList.class;
                     } else if (id == 5) {
-                        intent = new Intent(BaseActivity.this, ContactUs.class);
-                    } else {
-                        return;
+                        targetActivity = ContactUs.class;
                     }
 
                     drawerLayout.closeDrawer(GravityCompat.START);
-                    startActivity(intent);
+
+                    if (targetActivity != null) {
+                        // Check if we're already in that activity
+                        if (!BaseActivity.this.getClass().equals(targetActivity)) {
+                            intent = new Intent(BaseActivity.this, targetActivity);
+                            startActivity(intent);
+                        }
+                    }
+
+
+
+
+
 
                 }
             });
@@ -143,6 +158,13 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        for (int i = 0; i < menu.size(); i++) {
+            MenuItem menuItem = menu.getItem(i);
+            SpannableString spanString = new SpannableString(menuItem.getTitle());
+            spanString.setSpan(new ForegroundColorSpan(ContextCompat.getColor(this, R.color.black)), 0, spanString.length(), 0);
+            menuItem.setTitle(spanString);
+        }
         return true;
     }
 

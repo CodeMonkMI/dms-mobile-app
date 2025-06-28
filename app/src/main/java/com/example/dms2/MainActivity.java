@@ -46,7 +46,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.drawer_layout), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -57,11 +57,10 @@ public class MainActivity extends BaseActivity {
         // inflate dynamic data
         counterLayout = findViewById(R.id.main_counter_layout);
 
-        counterList.add(new StatItem('1', "Total Faculty", "45"));
-        counterList.add(new StatItem('2', "Total Students", "1250"));
-        counterList.add(new StatItem('3', "Active Courses", "78"));
-        counterList.add(new StatItem('4', "Pending Notices", "4"));
-        counterList.add(new StatItem('5', "Upcoming Events", "8"));
+        counterList.add(new StatItem('1', "Total Faculty", "6"));
+        counterList.add(new StatItem('2', "Total Students", "300+"));
+        counterList.add(new StatItem('3', "Active Courses", "53"));
+        counterList.add(new StatItem('5', "Upcoming Events", "3+"));
 
 
         for (StatItem item : counterList) {

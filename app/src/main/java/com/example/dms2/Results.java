@@ -97,7 +97,7 @@ public class Results extends BaseActivity {
                                 name.setText(semester.semester + " Semester");
                                 date.setText("Publish date: " + result.date.substring(0, 10)); // cleaner
                                 gpa.setText("GPA: " + result.gpa);
-                                if(result.gpa == 0.0) {
+                                if (result.gpa == 0.0) {
                                     gpa.setTextColor(Color.parseColor("#FF0000"));
                                     name.setTextColor(Color.parseColor("#FF0000"));
                                     date.setTextColor(Color.parseColor("#FF0000"));

@@ -31,9 +31,14 @@ public class ContactUs extends BaseActivity {
 
 
         List<Contact> contactList = new ArrayList<>();
-        contactList.add(new Contact("Dr. John Doe", "Department Head & Chief Instructor", "info@cs.edu", "01911223344", "CMT-302"));
-        contactList.add(new Contact("Anika Sultana", "Senior Lecturer", "anika@cs.edu", "01755667788", "CMT-204"));
-        contactList.add(new Contact("Md. Hafizur Rahman", "Lecturer", "hafiz@cs.edu", "01677889900", "CMT-205"));
+        contactList.add(new Contact("Bithi Biswas", "Chief Instructor & Department Head (2nd Shift), Computer Science and Technology", "bithibiswas98@gmail.com", "01749485453", "3rd Floor"));
+        contactList.add(new Contact("Md. Mehedi Hasan", "Instructor (Tech), Computer", "mehedi.crux@gmail.com", "01737232587", "2nd Floor | Beside Digital Lab"));
+        contactList.add(new Contact("Md. Kamal Sowdagar", "Instructor (Tech), Computer", "kamalsowdagar@gmail.com", "01521412326", "2nd Floor | Beside Digital Lab"));
+        contactList.add(new Contact("Tamanna Halim Shanta", "Junior Instructor (Tech/Computer)", "tamannashanta5@gmail.com", "01767177617", "3rd Floor | West Side"));
+        contactList.add(new Contact("Shyamananda Pal", "Junior Instructor (Tech), Computer", "shamanando@gmail.com", "01558957892", "3rd Floor | West Side"));
+        contactList.add(new Contact("Sajib Kumar", "Junior Instructor (Tech/Computer)", "sajib0430@gmail.com", "01730684022", "3rd Floor | West Side"));
+
+
 
         // 2. Render all contacts
         for (Contact contact : contactList) {
