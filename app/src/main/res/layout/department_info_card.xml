@@ -27,7 +27,7 @@
             android:id="@+id/address_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address: Computer Science Building,\nUniversity Campus"
+            android:text="Address: 2nd and 3rd Floor,  Computer Science and Telecomunication Building, Institute Campus"
             android:textSize="14sp"
             android:textColor="#444444"
             android:layout_marginBottom="8dp" />
